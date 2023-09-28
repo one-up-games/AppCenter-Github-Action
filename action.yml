@@ -33,6 +33,9 @@ inputs:
     description: "If true, shows additional information from the action execution"
     required: false
     default: false
+outputs:
+  releaseId: # release id
+    description: 'Release id'    
 branding:
   color: "red"
   icon: "send"
