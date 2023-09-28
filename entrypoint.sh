@@ -33,3 +33,6 @@ for group in $INPUT_GROUP; do
         appcenter distribute releases add-destination --token "$INPUT_TOKEN" -d $group -t group -r $releaseId --app "$INPUT_APPNAME" "${params[@]}"
     fi
 done
+
+echo "releaseId=$releaseId" >> $GITHUB_OUTPUT
+
