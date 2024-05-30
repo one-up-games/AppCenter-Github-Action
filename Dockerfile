@@ -1,4 +1,4 @@
-FROM node:20.5.0-alpine
+FROM pull public.ecr.aws/docker/library/node:lts-alpine3.20
 
 WORKDIR /app
 COPY . /app
